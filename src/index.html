@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Touch Painting</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <!-- DEV -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../tailwind.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="nav.js"></script>
+</head>
+<body>
+    <header id="navbar" class="fixed transition duration-150 shadow-lg top-0 w-full z-10 bg-light">
+        <nav class="flex justify-between px-4 py-3">
+            <a class="logo" href="/">
+                <svg id="img" width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="616cfcba85"><path d="M 115.855469 313.140625 L 133.292969 313.140625 L 133.292969 342.460938 L 115.855469 342.460938 Z M 115.855469 313.140625 " clip-rule="nonzero"/></clipPath></defs><path   d="M 326.660156 40.125 C 324.390625 42.394531 324.390625 46.070312 326.660156 48.335938 C 328.925781 50.605469 332.605469 50.605469 334.871094 48.335938 C 337.136719 46.070312 337.136719 42.394531 334.871094 40.125 C 332.605469 37.859375 328.929688 37.859375 326.660156 40.125 Z M 326.660156 40.125 " fill-opacity="1" fill-rule="nonzero"/><path   d="M 351.996094 23.003906 C 329 0.0078125 295.617188 27.195312 265.992188 56.816406 C 251.367188 71.441406 237.917969 86.800781 227.09375 101.234375 C 215.003906 117.363281 193.046875 122.867188 174.875 114.328125 L 166.105469 110.203125 C 153.640625 104.34375 138.726562 106.953125 128.988281 116.6875 L 119.816406 125.859375 L 83.515625 162.164062 C 81.914062 163.761719 81.109375 165.855469 81.085938 167.957031 L 34.972656 214.070312 C 34.835938 214.121094 34.710938 214.203125 34.582031 214.265625 L 31.628906 217.214844 C 31.566406 217.351562 31.484375 217.472656 31.429688 217.609375 L 2.222656 246.816406 C -0.0976562 249.140625 -0.0976562 252.90625 2.222656 255.226562 L 31.179688 284.183594 C 32.296875 285.300781 33.808594 285.925781 35.386719 285.925781 L 43.445312 285.925781 L 43.703125 294.417969 C 43.75 295.933594 44.371094 297.371094 45.441406 298.445312 L 88.226562 341.226562 C 89.816406 342.820312 92.175781 343.378906 94.3125 342.664062 L 106.042969 338.753906 L 101.960938 350.140625 C 101.183594 352.308594 101.726562 354.726562 103.351562 356.355469 L 119.773438 372.777344 C 122.097656 375.101562 125.863281 375.101562 128.183594 372.777344 L 186.238281 314.722656 L 207.046875 293.917969 C 209.148438 293.890625 211.238281 293.089844 212.839844 291.488281 L 249.140625 255.183594 L 258.3125 246.015625 C 268.050781 236.277344 270.65625 221.359375 264.800781 208.898438 L 260.675781 200.121094 C 252.136719 181.953125 257.640625 159.996094 273.769531 147.902344 C 288.203125 137.082031 303.558594 123.632812 318.1875 109.007812 C 347.804688 79.382812 374.992188 46 351.996094 23.003906 Z M 173.605469 310.53125 C 173.117188 307.09375 172.085938 303.808594 170.488281 300.695312 C 160.601562 281.382812 131.203125 272.304688 102.769531 263.523438 C 65.199219 251.921875 40.46875 242.75 42.429688 223.433594 L 87.71875 178.140625 L 196.859375 287.28125 Z M 206.949219 273.820312 L 101.179688 168.050781 L 127.386719 141.839844 L 233.160156 247.613281 Z M 306.410156 97.230469 C 292.332031 111.308594 277.589844 124.226562 263.777344 134.578125 C 241.359375 151.386719 233.71875 181.929688 245.601562 207.203125 L 249.726562 215.984375 C 252.609375 222.109375 251.328125 229.449219 246.539062 234.238281 L 241.574219 239.203125 L 135.796875 133.429688 L 140.761719 128.464844 C 145.550781 123.675781 152.890625 122.390625 159.019531 125.273438 L 167.792969 129.398438 C 193.070312 141.28125 223.613281 133.640625 240.414062 111.226562 C 250.773438 97.414062 263.6875 82.671875 277.765625 68.59375 C 325.898438 20.460938 336.300781 30.863281 340.21875 34.78125 C 344.132812 38.699219 354.542969 49.097656 306.410156 97.230469 Z M 306.410156 97.230469 " fill-opacity="1" fill-rule="nonzero"/><g clip-path="url(#616cfcba85)"><path d="M 115.855469 313.140625 L 133.292969 313.140625 L 133.292969 342.433594 L 115.855469 342.433594 Z M 115.855469 313.140625 " fill-opacity="1" fill-rule="nonzero"/></g></svg>
+            </a>
+            <div>
+                <ul class="flex h-full gap-6 items-center">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-8">
+        <section>
+            <div class=" overflow-hidden relative">
+                <video id="hero" class="blur-sm scale-105 w-full object-cover h-[600px]" loop>
+                    <source src="painters-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Please upgrade to a modern browser.
+                </video>
+                <div class="absolute bottom-4 cursor-pointer right-4 h-8 w-8">
+                    <div id="play" on>
+                        <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="SVGRepo_iconCarrier"> <path d="M16.6582 9.28638C18.098 10.1862 18.8178 10.6361 19.0647 11.2122C19.2803 11.7152 19.2803 12.2847 19.0647 12.7878C18.8178 13.3638 18.098 13.8137 16.6582 14.7136L9.896 18.94C8.29805 19.9387 7.49907 20.4381 6.83973 20.385C6.26501 20.3388 5.73818 20.0469 5.3944 19.584C5 19.053 5 18.1108 5 16.2264V7.77357C5 5.88919 5 4.94701 5.3944 4.41598C5.73818 3.9531 6.26501 3.66111 6.83973 3.6149C7.49907 3.5619 8.29805 4.06126 9.896 5.05998L16.6582 9.28638Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/> </g>
+                        </svg>
+                    </div>
+                    <div id="pause" class="hidden">
+                        <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="SVGRepo_iconCarrier"> <path d="M8 5V19M16 5V19" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
