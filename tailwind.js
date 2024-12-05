@@ -3,7 +3,7 @@ tailwind.config = {
     extend: {
       colors: {
         navy: "#2c3e50", /* Soft Navy */
-        sand: "#f4e3c1", /* Warm Sand */
+        slate: "#f8fafc", /* Warm Sand */
     
         /* Accent Colors */
         coral: "#e74c3c", /* Deep Coral */
