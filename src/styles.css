@@ -1,0 +1,17 @@
+header.box svg#img {
+    height: 50px;
+
+}
+
+header.box #mobile {
+    margin-top: 74.1px;
+}
+
+header #mobile {
+    margin-top: 94px;
+}
+
+header svg#img {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 70px;
+}
