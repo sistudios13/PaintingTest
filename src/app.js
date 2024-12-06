@@ -1,7 +1,10 @@
 window.onscroll = function() {scrollFunction()}
+
+let scrollHeight = 90
+
 function scrollFunction() {
     if (window.innerWidth < 600) {
-        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        if ( document.documentElement.scrollTop > scrollHeight) {
         
             
             document.getElementById("navbar").classList.add("box")
@@ -15,7 +18,7 @@ function scrollFunction() {
     }
  
     else {
-        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        if (document.body.scrollTop > scrollHeight || document.documentElement.scrollTop > scrollHeight) {
         
             
             document.getElementById("navbar").classList.add("box")
