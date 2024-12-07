@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistic Touch Painting</title>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- DEV -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../tailwind.js"></script>
@@ -64,77 +64,77 @@
 
     <main class="mt-[90px]">
         <section>
-            <div class=" overflow-hidden relative">
-                <video id="hero" class="blur-sm scale-105 w-full object-cover h-[80vh] lg:h-[80vh]"  loop>
-                    <source src="painters-vid.mp4" type="video/mp4">
-                    Your browser does not support the video tag. Please upgrade to a modern browser.
-                </video>
-                <div class="absolute mt-[3vh] flex items-start md:mt-12 lg:mt-0 lg:items-center lg:w-3/4 p-4 gap-6 md:p-8 lg:p-12 2xl:p-24 top-0 left-0 h-full">
-                    <div class="text-lg p-6 w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40">
+            <div class=" overflow-hidden">
+                <!-- <img class="object-cover brightness-75 h-[80vh] w-full" src="bg.jpg" alt="background image"> -->
+                <div class=" flex items-start md:pt-12 lg:mt-0 lg:items-center h-[70vh] lg:h-[80vh] p-4 gap-6 md:p-8 lg:p-12 2xl:p-24 top-0 left-0 bg-[url('bg.jpg')] bg-center bg-no-repeat bg-cover">
+                    <div class="text-lg lg:text-xl flex flex-col p-6 md:h-1/2 lg:h-fit w-full md:w-3/4 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40">
                         <h1 class="text-3xl font-bold text-dark pb-5">Reliable <span class="text-navy">residential painting</span> in the Montreal area</h1>
                         <p>Text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et, natus ducimus, molestiae quia repudiandae maxime aut minima dolor qui error eveniet excepturi iste tenetur quam architecto voluptas ipsa aspernatur.</p>
-                        <div class="flex gap-4 items-center pt-6">
+                        <div class="flex gap-4 h-full items-end pt-6">
                             <a href="./" class="py-2 px-4 bg-navy text-light rounded font-bold transition before:content-[''] relative before:absolute before:w-0 lg:hover:before:w-full  before:transition-all before:h-full before:rounded before:bg-coral before:duration-[400ms] before:z-10 before:left-0 before:top-0
                             after:absolute after:w-0 lg:hover:after:w-full  after:transition-all after:duration-200 after:h-full after:rounded after:bg-green after:z-0 after:left-0 after:top-0"><span class="z-20 relative">Contact Us</span></a>
                             
                         </div>
                     </div>
                 </div>
-                    <div class="cursor-pointer absolute bottom-3 right-4" x-data="{ playing : false}">
-                        <button id="play" @click="playing = true; playVid()" x-show="playing == false">
-                            <svg fill="#ffffff" class="size-[30px] lg:size-[50px]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                                viewBox="0 0 512 512" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M256,0C114.511,0,0,114.497,0,256c0,141.49,114.495,256,256,256c141.49,0,256-114.497,256-256C512,114.51,397.503,0,256,0
-                                            z M348.238,284.418l-120.294,69.507c-10.148,5.864-22.661,5.874-32.826,0.009c-10.158-5.862-16.415-16.699-16.415-28.426V186.493
-                                            c0-11.728,6.258-22.564,16.415-28.426c5.076-2.93,10.741-4.395,16.406-4.395c5.67,0,11.341,1.468,16.42,4.402l120.295,69.507
-                                            c10.149,5.864,16.4,16.696,16.4,28.418C364.639,267.722,358.387,278.553,348.238,284.418z"/>
-                                    </g>
-                                </g>
-                            </svg>  
-                        </button>
-                        <button id="pause" @click="playing = false; pauseVid()" x-show="playing">
-                            <svg fill="#ffffff" class="size-[30px] lg:size-[50px]" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                                viewBox="0 0 512 512" xml:space="preserve">
-                                <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M224,320
-                                c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z M352,320
-                                c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z"/>
-                            </svg>
-                        </button>
-                    </div>
-                
             </div>
         </section>
         <!-- About -->
          <section>
-            <div class="w-full py-8 grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-end items-center gap-8 p-4 md:p-8 lg:p-12 2xl:p-24">
+            <div class="w-full py-8 pb-24 sm:pb-28 md:pb-32 lg:pb-32 grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-items-end items-center gap-8 p-4 md:p-8 lg:p-12 2xl:p-24">
                 <div class="h-fit">
                     <h2 class="text-2xl font-bold text-navy pb-5">A painting company that delivers quality work</h2>
                     <p class="text-lg pb-5">Text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et, natus ducimus, molestiae quia repudiandae maxime aut minima dolor qui error eveniet excepturi iste tenetur quam architecto voluptas ipsa aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias inventore nihil ex quam eaque? Asperiores dicta consequatur quas nisi corrupti, odit ducimus labore repellat distinctio suscipit totam nemo doloremque placeat.</p>
                     <a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1 font-bold ">About Us &rarr;</a>
                 </div>
-                <div class="size-80 md:size-[400px] 2xl:size-[600px] overflow-hidden">
+                <div class="wax-w-80 max-w-[350px] md:max-w-[400px] 2xl:size-[600px] overflow-hidden">
                     <img class="lg:hover:scale-105 duration-300 transition-all w-full rounded-sm" src="painting.jpeg" alt="indoor painting service">
                 </div>
             </div>
          </section>
+         <!-- MIDDLE -->
+          <div class="absolute w-full -translate-y-1/2">
+            <div class="sm:hidden mx-auto text-center text-light flex justify-center bg-[url('./brush.svg')] bg-cover flex-col size-40">
+                <p class="text-3xl pl-4 font-bold">100+</p>
+                <p class="pl-1.5">Satisfied <br> Customers</p>
+            </div>
+
+            <div class="hidden sm:grid mx-auto grid-cols-3 w-fit gap-6">
+                <div class="text-center text-light flex justify-center bg-[url('./brush.svg')] bg-cover flex-col size-40">
+                    <p class="text-3xl pl-4 font-bold">100+</p>
+                    <p class="pl-1.5">Satisfied <br> Customers</p>
+                </div>
+                <div class="text-center text-light flex justify-center bg-[url('./brush1.svg')] bg-cover flex-col size-40">
+                    <p class="text-3xl pl-4 font-bold">12+</p>
+                    <p class="pl-1.5">Years <br> Experience</p>
+                </div>
+                <div class="text-center text-light flex justify-center bg-[url('./brush2.svg')] bg-cover flex-col size-40">
+                    <p class="text-3xl pl-2 font-bold">2</p>
+                    <p class="pl-1.5">Dedicated <br> Employees</p>
+                </div>
+            </div>
+
+          </div>
+          <!-- END -->
          <section class="bg-gray-100">
-            <div class="w-full py-8  p-4 md:p-8 lg:p-12 2xl:p-24">
+            <div class="w-full py-8 pt-20 sm:pt-24 md:pt-28 lg:pt-28 p-4 md:p-8 lg:p-12 2xl:p-24">
                 <h2 class="text-2xl font-bold text-center text-navy pb-6">Our Services</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mx-auto w-fit">
                     <div class="bg-white shadow rounded p-4">
-                        <img class="size-56 sm:size-48" src="exterior.webp" alt="exterior painting">
+                        <img class="size-56 sm:size-48 lg:size-64" src="exterior.webp" alt="exterior painting">
                         <h3 class="text-xl font-semibold text-center py-2">Exterior Painting</h3>
                     </div>
                     <div class="bg-white shadow rounded p-4">
-                        <img class="size-56 sm:size-48 object-cover" src="interior.jpeg" alt="exterior painting">
+                        <img class="size-56 sm:size-48 lg:size-64 object-cover" src="interior.jpeg" alt="exterior painting">
                         <h3 class="text-xl font-semibold text-center py-2">Interior Painting</h3>
                     </div>
                     <div class="bg-white shadow rounded p-4">
-                        <img class="size-56 sm:size-48" src="staining.jpg" alt="exterior painting">
+                        <img class="size-56 sm:size-48 lg:size-64" src="staining.jpg" alt="exterior painting">
                         <h3 class="text-xl font-semibold text-center pt-2">Exterior Staining</h3>
                     </div>
+                </div>
+                <div class="flex gap-4 items-center justify-center pt-6">
+                    <a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1 font-bold ">Learn More &rarr;</a>
                 </div>
             </div>
          </section>
@@ -144,22 +144,22 @@
                 <div x-data="{            
                     slides: [                
                         {
-                            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
+                            imgSrc: 'john.jpg',
                             title: 'Amazing service!',
                             name: 'John Smith',
-                            review: 'This painting company is wonderful! They are so profesional and returned quality results for an affordable price.',        
+                            review: 'We hired Artistic Touch Painting to refresh our office, and they nailed it! From color consultation to the final brushstroke, our workspace feels more vibrant and welcoming.',        
                         },                
                         {
-                            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
-                            title: 'Amazing service!',
-                            name: 'John Smith',
-                            review: 'This painting company is wonderful! They are so profesional and returned quality results for an affordable price.',        
+                            imgSrc: 'irene.webp',
+                            title: 'Exterior Staining',
+                            name: 'Irene Walker',
+                            review: 'Artistic Touch Painting transformed my living room into a space I now love showing off. Their attention to detail and professional attitude made the process seamless. Highly recommend them!',        
                         },               
                         {
-                            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
-                            title: 'Amazing service!',
-                            name: 'John Smith',
-                            review: 'This painting company is wonderful! They are so profesional and returned quality results for an affordable price.',        
+                            imgSrc: 'mike.jpg',
+                            title: 'Efficient Service',
+                            name: 'Mike Brown',
+                            review: 'The team brought our vision to life with expert skills and creative suggestions. The use of eco-friendly paints was a bonus, and we’re thrilled with the results!',        
                         },            
                     ],            
                     currentSlideIndex: 1,
@@ -200,23 +200,37 @@
                             this.touchEndX = null
                         }
                     },     
-                }" class="relative w-full max-w-2xl overflow-hidden">
-                   
+                }" class="relative w-full lg:max-w-[100%] max-w-2xl mx-auto overflow-hidden">
+
+                    <!-- previous button -->
+                    <button type="button" class="lg:hidden absolute left-1 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center p-2 text-neutral-600 transition hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:outline-offset-0" aria-label="previous slide" x-on:click="previous()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <!-- next button -->
+                    <button type="button" class="lg:hidden absolute right-1 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center p-2 text-neutral-600 transition hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:outline-offset-0" aria-label="next slide" x-on:click="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+
                     <!-- slides -->
                     <!-- Change min-h-[50svh] to your preferred height size -->
-                    <div class="relative min-h-[50svh] w-full" x-on:touchstart="handleTouchStart($event)" x-on:touchmove="handleTouchMove($event)" x-on:touchend="handleTouchEnd()">
+                    <div class="lg:hidden relative min-h-[350px] w-full" x-on:touchstart="handleTouchStart($event)" x-on:touchmove="handleTouchMove($event)" x-on:touchend="handleTouchEnd()">
                         <template x-for="(slide, index) in slides">
-                            <div x-show="currentSlideIndex == index + 1" class="absolute rounded bg-white inset-0" x-transition.opacity.duration.700ms>
-                                <figure class="flex flex-col items-center justify-center p-8 text-center">
-                                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white" x-text="silde.title"></h3>
-                                        <p class="my-4">If you care for your time, I hands down would go with this."</p>
+                            <div x-show="currentSlideIndex == index + 1" class="absolute shadow rounded bg-slate inset-0" x-transition.opacity.duration.700ms>
+                                <figure class="flex flex-col items-center justify-between pb-12 h-full p-8 text-center">
+                                    <blockquote class="max-w-2xl mx-auto text-gray-500 lg:mb-8 dark:text-gray-400">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white" x-text="slide.title"></h3>
+                                        <p class="my-4 text-lg" x-text="slide.review"></p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center ">
-                                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture">
+                                        <img class="rounded-full object-cover w-9 h-9" x-bind:src="slide.imgSrc" alt="profile picture">
                                         <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                                            <div>Bonnie Green</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
+                                            <div x-text="slide.name"></div>
+                                            
                                         </div>
                                     </figcaption>    
                                 </figure>
@@ -225,14 +239,36 @@
                     </div>
                     
                     <!-- indicators -->
-                    <div class="absolute rounded-md bottom-3 md:bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-4 md:gap-3 bg-white/75 px-1.5 py-1 md:px-2 dark:bg-neutral-950/75" role="group" aria-label="slides" >
+                    <div class="lg:hidden absolute rounded-md bottom-3 md:bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-4 md:gap-3 bg-white/75 px-1.5 py-1 md:px-2 dark:bg-neutral-950/75" role="group" aria-label="slides" >
                         <template x-for="(slide, index) in slides">
                             <button class="size-2 cursor-pointer rounded-full transition bg-neutral-600 dark:bg-neutral-300" x-on:click="currentSlideIndex = index + 1" x-bind:class="[currentSlideIndex === index + 1 ? 'bg-neutral-600 dark:bg-neutral-300' : 'bg-neutral-600/50 dark:bg-neutral-300/50']" x-bind:aria-label="'slide ' + (index + 1)"></button>
+                        </template>
+                    </div>
+
+                    <!-- Large Screens -->
+                    <div class="hidden min-h-[300px] w-full lg:grid grid-cols-3 gap-6">
+                        <template x-for="(slide, index) in slides">
+                            <div class=" rounded bg-slate shadow inset-0" x-transition.opacity.duration.700ms>
+                                <figure class="flex flex-col items-center h-full justify-between p-8 text-center">
+                                    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white" x-text="slide.title"></h3>
+                                        <p class="my-4" x-text="slide.review"></p>
+                                    </blockquote>
+                                    <figcaption class="flex items-center justify-center ">
+                                        <img class="rounded-full object-cover w-9 h-9" x-bind:src="slide.imgSrc" alt="profile picture">
+                                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                                            <div x-text="slide.name"></div>
+                        
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </template>
                     </div>
                 </div>
             </div>
          </section>
+            
     </main>
     <footer>
 
