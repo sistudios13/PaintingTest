@@ -1,17 +1,57 @@
 header.box svg#img {
-    height: 50px;
-
+	height: 50px;
 }
 
 header.box #mobile {
-    margin-top: 74px;
+	margin-top: 74px;
 }
 
 header #mobile {
-    margin-top: 94px;
+	margin-top: 94px;
 }
 
 header svg#img {
-    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    height: 70px;
+	transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	height: 70px;
+}
+
+@keyframes fadeup {
+	0% {
+		transform: translateY(15px);
+		opacity: 0.01;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.fadeupanim {
+		animation-name: fadeup;
+		animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		animation-duration: 0.7s;
+		animation-fill-mode: both;
+	}
+}
+.fadeup {
+	transform: translateY(15px);
+	opacity: 0.01;
+}
+
+.delay1 {
+	animation-delay: 0.2s;
+}
+.delay2 {
+	animation-delay: 0.4s;
+}
+.delay3 {
+	animation-delay: 0.6s;
+}
+.delay4 {
+	animation-delay: 0.8s;
+}
+
+[x-cloak] {
+    display: none !important;
 }
