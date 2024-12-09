@@ -40,16 +40,19 @@ header svg#img {
 }
 
 .delay1 {
-	animation-delay: 0.2s;
+	animation-delay: 0.15s;
 }
 .delay2 {
-	animation-delay: 0.4s;
+	animation-delay: 0.3s;
 }
 .delay3 {
-	animation-delay: 0.6s;
+	animation-delay: 0.45s;
 }
 .delay4 {
-	animation-delay: 0.8s;
+	animation-delay: 0.6s;
+}
+.delay5 {
+	animation-delay: 0.75s;
 }
 
 [x-cloak] {

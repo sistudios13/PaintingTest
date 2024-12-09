@@ -28,10 +28,10 @@
                 </button>
             </div>
                 <!-- Mobile -->
-                <ul id="mobile" class="absolute shadow-lg transition-all text-dark bg-slate pb-8 flex-col items-end flex w-full top-0 right-0 p-4 float-right lg:hidden gap-4 lg:items-center text-xl font-semibold" x-show="isOpen" x-cloak x-transition:enter="transition ease-out duration-150"
+                <ul id="mobile" class="absolute shadow-lg transition-all text-dark bg-slate pb-8 flex-col items-end flex w-full top-0 right-0 p-4 float-right lg:hidden gap-4 lg:items-center text-xl font-semibold" x-show="isOpen" x-cloak x-transition:enter="transition ease-out duration-200"
                         x-transition:enter-start="opacity-0  translate-x-12"
                         x-transition:enter-end="opacity-100 scale-100"
-                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave="transition ease-in duration-120"
                         x-transition:leave-start="opacity-100 scale-100"
                         x-transition:leave-end="opacity-0 translate-x-4">
                     <li><a href="./" x-bind:class="{'text-coral': current == 1 }" class="cursor-pointer w-full text-right">Home</a></li>
@@ -123,50 +123,50 @@
           <!-- END -->
          <section class="bg-gray-100">
             <div class="sm:hidden w-full py-8 pt-20 sm:pt-24 md:pt-28 lg:pt-28 p-4 md:p-8 lg:p-12 2xl:p-24">
-                <h2 class="text-2xl font-bold text-center text-navy pb-6">Our Services</h2>
+                <h2 class="text-2xl font-bold text-center text-navy py-6 fadeup">Our Services</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mx-auto w-fit">
                     <div class="fadeup bg-white shadow rounded p-4">
                         <img class="size-56 sm:size-48 lg:size-64" src="exterior.webp" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center py-2">Exterior Painting</h3>
+                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay1">Exterior Painting</h3>
                     </div>
                     <div class="fadeup bg-white shadow rounded p-4">
                         <img class="size-56 sm:size-48 lg:size-64 object-cover" src="int.jpg" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center py-2">Interior Painting</h3>
+                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay1">Interior Painting</h3>
                     </div>
                     <div class="fadeup bg-white shadow rounded p-4">
                         <img class="size-56 sm:size-48 lg:size-64" src="staining.jpg" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center pt-2">Exterior Staining</h3>
+                        <h3 class="text-xl font-semibold text-center pt-2 fadeup delay1">Exterior Staining</h3>
                     </div>
                 </div>
-                <div class="flex gap-4 items-center justify-center pt-6">
+                <div class="flex gap-4 items-center justify-center pt-6 fadeup">
                     <a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1 font-bold ">Learn More &rarr;</a>
                 </div>
             </div>
 
             <div class="hidden sm:block w-full py-8 pt-20 sm:pt-24 md:pt-28 lg:pt-28 p-4 md:p-8 lg:p-12 2xl:p-24">
-                <h2 class="text-2xl font-bold text-center text-navy pb-6">Our Services</h2>
+                <h2 class="text-2xl font-bold text-center text-navy py-6 fadeup">Our Services</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mx-auto w-fit">
                     <div class="fadeup bg-white shadow rounded p-4">
                         <img class="size-56 sm:size-48 lg:size-64" src="exterior.webp" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center py-2">Exterior Painting</h3>
+                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay1">Exterior Painting</h3>
                     </div>
                     <div class="fadeup delay1 bg-white shadow rounded p-4">
                         <img class="size-56 sm:size-48 lg:size-64 object-cover" src="int.jpg" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center py-2">Interior Painting</h3>
+                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay2">Interior Painting</h3>
                     </div>
                     <div class="fadeup bg-white shadow rounded p-4">
                         <img class="size-56 sm:size-48 lg:size-64" src="staining.jpg" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center pt-2">Exterior Staining</h3>
+                        <h3 class="text-xl font-semibold text-center pt-2 fadeup delay1">Exterior Staining</h3>
                     </div>
                 </div>
-                <div class="flex gap-4 items-center justify-center pt-6">
+                <div class="flex gap-4 items-center justify-center pt-6 fadeup">
                     <a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1 font-bold ">Learn More &rarr;</a>
                 </div>
             </div>
          </section>
-         <section class="">
+         <section>
             <div class="w-full py-8 pb-64 md:pb-48 lg:pb-48 2xl:pb-48 p-4 md:p-8 lg:p-12 2xl:p-24">
-                <h2 class="text-2xl font-bold text-center text-navy pb-6">What our clients say</h2>
+                <h2 class="text-2xl font-bold text-center text-navy pb-6 fadeup">What our clients say</h2>
                 <div x-data="{            
                     slides: [                
                         {
@@ -244,18 +244,18 @@
 
                     <!-- slides -->
                     <!-- Change min-h-[50svh] to your preferred height size -->
-                    <div class="lg:hidden relative min-h-[350px] w-full" x-on:touchstart="handleTouchStart($event)" x-on:touchmove="handleTouchMove($event)" x-on:touchend="handleTouchEnd()">
+                    <div class="lg:hidden fadeup relative min-h-[350px] fadeup w-full" x-on:touchstart="handleTouchStart($event)" x-on:touchmove="handleTouchMove($event)" x-on:touchend="handleTouchEnd()">
                         <template x-for="(slide, index) in slides">
                             <div x-show="currentSlideIndex == index + 1" class="absolute shadow rounded bg-gray-100 inset-0" x-transition.opacity.duration.700ms>
                                 <figure class="flex flex-col items-center justify-between pb-12 h-full p-8 text-center">
                                     <blockquote class="max-w-2xl mx-auto text-gray-600 lg:mb-8">
-                                        <h3 class="text-xl font-semibold text-gray-900 " x-text="slide.title"></h3>
-                                        <p class="my-4 text-lg" x-text="slide.review"></p>
+                                        <h3 class="text-xl font-semibold text-gray-900 fadeup delay1" x-text="slide.title"></h3>
+                                        <p class="my-4 text-lg fadeup delay2" x-text="slide.review"></p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center ">
-                                        <img class="rounded-full object-cover w-9 h-9" x-bind:src="slide.imgSrc" alt="profile picture">
+                                        <img class="rounded-full object-cover w-9 h-9 fadeup delay3" x-bind:src="slide.imgSrc" alt="profile picture">
                                         <div class="space-y-0.5 font-medium text-left ms-3">
-                                            <div x-text="slide.name"></div>
+                                            <div class="fadeup delay4" x-text="slide.name"></div>
                                             
                                         </div>
                                     </figcaption>    
@@ -277,12 +277,12 @@
                             <div class="fadeup rounded bg-gray-100 shadow inset-0" x-transition.opacity.duration.700ms x-bind:class="[index === 1 ? 'delay1' : '']">
                                 <figure class="flex flex-col items-center h-full justify-between p-8 text-center">
                                     <blockquote class="max-w-2xl mx-auto mb-4 text-gray-600 lg:mb-8 ">
-                                        <h3 class="text-xl font-semibold text-gray-900 " x-text="slide.title"></h3>
-                                        <p class="text-lg my-4" x-text="slide.review"></p>
+                                        <h3 class="text-xl font-semibold text-gray-900 fadeup delay1" x-text="slide.title" x-bind:class="[index === 1 ? 'delay2' : '']"></h3>
+                                        <p class="text-lg my-4 fadeup delay2" x-bind:class="[index === 1 ? 'delay3' : '']" x-text="slide.review"></p>
                                     </blockquote>
                                     <figcaption class="flex items-center justify-center ">
-                                        <img class="rounded-full object-cover w-9 h-9" x-bind:src="slide.imgSrc" alt="profile picture">
-                                        <div class="space-y-0.5 font-medium text-left ms-3">
+                                        <img class="rounded-full object-cover w-9 h-9 fadeup delay3" x-bind:class="[index === 1 ? 'delay4' : '']" x-bind:src="slide.imgSrc" alt="profile picture">
+                                        <div class="space-y-0.5 font-medium text-left ms-3 fadeup delay4" x-bind:class="[index === 1 ? 'delay5' : '']">
                                             <div x-text="slide.name"></div>
                         
                                         </div>
@@ -296,11 +296,11 @@
          </section>
          <section class="absolute z-10 -translate-y-1/2 w-full">
             <div class="p-8 md:p-8 lg:p-12 2xl:p-24 ">
-                <div class="bg-[url('ext.webp')] bg-cover bg-no-repeat rounded-md w-full max-w-4xl mx-auto bg-center text-light">
+                <div class="bg-[url('ext.webp')] bg-cover fadeup bg-no-repeat rounded-md w-full max-w-4xl mx-auto bg-center text-light">
                     <div class="backdrop-brightness-50 rounded-md p-4">
-                        <h2 class="text-2xl font-bold text-light pt-2 pb-6">Interested in our services?</h2>
-                        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aperiam necessitatibus, repudiandae delectus consequuntur sapiente, a esse excepturi maiores iusto molestiae reiciendis maxime facere, fugiat recusandae repellendus. Soluta, illo maiores?</p>
-                        <div class="flex gap-4 h-full items-end pt-6">
+                        <h2 class="text-2xl font-bold text-light pt-2 pb-6 fadeup delay1">Interested in our services?</h2>
+                        <p class="text-lg fadeup delay1">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aperiam necessitatibus, repudiandae delectus consequuntur sapiente, a esse excepturi maiores iusto molestiae reiciendis maxime facere, fugiat recusandae repellendus. Soluta, illo maiores?</p>
+                        <div class="flex fadeup delay1 gap-4 h-full items-end pt-6">
                             <a href="./" class="py-2 px-4 bg-navy text-light rounded font-semibold transition before:content-[''] relative before:absolute before:w-0 lg:hover:before:w-full  before:transition-all before:h-full before:rounded before:bg-coral before:duration-[400ms] before:z-10 before:left-0 before:top-0
                             after:absolute after:w-0 lg:hover:after:w-full  after:transition-all after:duration-200 after:h-full after:rounded after:bg-green after:z-0 after:left-0 after:top-0"><span class="z-20 relative">LET'S TALK</span></a>
                         </div>

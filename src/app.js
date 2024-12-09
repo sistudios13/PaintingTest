@@ -5,7 +5,7 @@ window.onscroll = function () {
 };
 
 let scrollHeight = 90;
-let th = 0.5
+let th = 0.6
 
 function scrollFunction() {
 	if (window.innerWidth < 600) {
@@ -16,7 +16,7 @@ function scrollFunction() {
 			document.getElementById("navbar").classList.remove("box");
 		}
 	} else {
-    th = 0.5
+    th = 0.6
 		if (
 			document.body.scrollTop > scrollHeight ||
 			document.documentElement.scrollTop > scrollHeight
