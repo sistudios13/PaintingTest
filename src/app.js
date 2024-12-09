@@ -23,7 +23,7 @@ function scrollFunction() {
 		) {
 			document.getElementById("navbar").classList.add("box");
 		} else {
-			document.getElementById("navbar").classList.remove("box");
+			document.getElementById("navbar").classList.remove("box");   
 		}
 	}
 }

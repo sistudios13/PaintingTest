@@ -42,10 +42,10 @@
             <!-- Large -->
             <div class="hidden lg:block">
                 <ul class="hidden lg:flex h-full text-lg font-semibold gap-6 items-center">
-                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:scale-100': current == 1 }">Home</a></li>
-                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:scale-100': current == 2 }">About</a></li>
-                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:scale-100': current == 3 }">Services</a></li>
-                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:scale-100': current == 4 }">Contact</a></li>
+                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:w-full': current == 1 }">Home</a></li>
+                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:after:w-full': current == 2 }">About</a></li>
+                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:after:w-full': current == 3 }">Services</a></li>
+                    <li><a href="./" class="after:content-[''] relative after:absolute after:block after:w-0 lg:hover:after:w-full after:bg-coral after:transition-all after:h-0.5 after:rounded after:left-0 after:-bottom-1" x-bind:class="{'after:after:w-full': current == 4 }">Contact</a></li>
                 </ul>
             </div>
             <div class="hidden lg:flex items-center gap-4">
@@ -126,16 +126,16 @@
                 <h2 class="text-2xl font-bold text-center text-navy py-6 fadeup">Our Services</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mx-auto w-fit">
                     <div class="fadeup bg-white shadow rounded p-4">
-                        <img class="size-56 sm:size-48 lg:size-64" src="exterior.webp" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay1">Exterior Painting</h3>
+                        <img class="size-56 sm:size-48 lg:size-64 fadeup delay1" src="exterior.webp" alt="exterior painting">
+                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay2">Exterior Painting</h3>
+                    </div>
+                    <div class="fadeup delay1 bg-white shadow rounded p-4">
+                        <img class="size-56 sm:size-48 lg:size-64 object-coverfadeup delay2" src="int.jpg" alt="exterior painting">
+                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay3">Interior Painting</h3>
                     </div>
                     <div class="fadeup bg-white shadow rounded p-4">
-                        <img class="size-56 sm:size-48 lg:size-64 object-cover" src="int.jpg" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center py-2 fadeup delay1">Interior Painting</h3>
-                    </div>
-                    <div class="fadeup bg-white shadow rounded p-4">
-                        <img class="size-56 sm:size-48 lg:size-64" src="staining.jpg" alt="exterior painting">
-                        <h3 class="text-xl font-semibold text-center pt-2 fadeup delay1">Exterior Staining</h3>
+                        <img class="size-56 sm:size-48 lg:size-64 fadeup delay1" src="staining.jpg" alt="exterior painting">
+                        <h3 class="text-xl font-semibold text-center pt-2 fadeup delay2">Exterior Staining</h3>
                     </div>
                 </div>
                 <div class="flex gap-4 items-center justify-center pt-6 fadeup">
